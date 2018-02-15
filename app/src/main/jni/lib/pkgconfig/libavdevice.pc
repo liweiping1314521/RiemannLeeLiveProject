@@ -1,0 +1,14 @@
+prefix=/media/common/liweiping/ffmpeg/rtmp/FREYA-LIVE-LIBRARY-OPTIMIZER-FOR-ANDROID-master/temp/armeabi-v7a
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 57.1.100
+Requires: libavformat >= 57.56.100, libavcodec >= 57.64.101, libavutil >= 55.34.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavdevice -lx264 -lfdk-aac -lm -lz -pthread
+Libs.private: 
+Cflags: -I${includedir}
